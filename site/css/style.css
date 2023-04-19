@@ -1,0 +1,44 @@
+h1 {
+    margin-top: 5%;
+    font-size: 24px;
+}
+
+table,
+th,
+td {
+    border: 2px solid black;
+}
+
+.tabel {
+    /* padding-left: 33%; */
+    align-items: center;
+}
+
+body {
+    background-color: goldenrod;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+label {
+    width: 180px;
+    display: inline-block;
+}
+
+.form-groep {
+    margin: 10px 0px;
+}
+
+button {
+    width: 25%;
+    background-color: #4caf50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
