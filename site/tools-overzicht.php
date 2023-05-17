@@ -11,6 +11,15 @@ $result = mysqli_query($conn, $sql);
 
 $all_tools = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
+// $search = $_GET['tool'];
+// $search = $mysqli->real_escape_string($search);
+
+// $query = "SELECT tool_name FROM tools WHERE tool_name LIKE '%" . $search . "%'";
+// $result = $mysqli->query($query);
+
+// while ($row = $result->fetch_object()) {
+//   echo "<div id='link' onClick='addText(\"" . $row->tool_name . "\");'>" . $row->tool_name . "</div>";
+// }
 
 ?>
 
@@ -25,6 +34,12 @@ $all_tools = mysqli_fetch_all($result, MYSQLI_ASSOC);
 </head>
 
 <body>
+
+  <form action="verwerk-zoek.php" method="post">
+    <label for=""> zoek </label>
+    <input type="text" name="zoekveld" placeholder="Type here">
+    <button type="submit"> Zoek!</button>
+  </form>
 
   <table>
     <thead>
