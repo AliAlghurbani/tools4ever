@@ -22,7 +22,8 @@ if (!is_array($user)) {
     header("location: inloggen.php");
 }
 
-if ($user['password'] === $_POST['password']) {
+if (password_verify($password, $user['password'])) {
+    // if ($user['password'] === $_POST['password']) 
 
     session_start();
 

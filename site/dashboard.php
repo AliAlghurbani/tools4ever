@@ -1,5 +1,9 @@
 <?php
+require 'database.php';
 
+
+$result = mysqli_query($conn, "SELECT COUNT(email) FROM users WHERE role = 'employee' ");
+$row = mysqli_fetch_array($result);
 session_start();
 
 if (!isset($_SESSION['isIngelogd'])) {

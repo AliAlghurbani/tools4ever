@@ -11,7 +11,7 @@
 
 <body>
     <h1> Nieuw user </h1>
-    <form action="verwerk-nieuw-product.php" method="post">
+    <form action="verwerk-nieuw-gebruiker.php" method="post">
         <div class="form-group">
             <label for="id">ID</label>
             <input type="text" name="id" id="id" class="input">
@@ -37,8 +37,8 @@
             <input type="text" name="userAddress" id="userAddress" class="input">
         </div>
         <div class="form-group">
-            <label for="userCity">city</label>
-            <input type="text" name="userCity" id="userCity" class="input">
+            <label for="userRole">role</label>
+            <input type="text" name="userRole" id="userRole" class="input">
         </div>
         <div class="form-group">
             <label for="activeness">Activeness</label>
@@ -47,11 +47,7 @@
             <label for="is_active">Active</label>
             <input type="radio" name="is_active" id="is_active" class="radio">
         </div>
-        <div class="form-group">
-            <label for="userAddress">Address</label>
-            <input type="text" name="userAddress" id="userAddress" class="input">
-        </div>
-        <button type="submit"> maak nieuw product!</button>
+        <button type="submit"> maak nieuw user!</button>
 
 </body>
 
